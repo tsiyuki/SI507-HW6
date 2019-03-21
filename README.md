@@ -59,7 +59,7 @@ Below are a bunch of questions and indications of things to do. For each indicat
 * List everyone's names and uniqnames who have worked on this assignment with you, **including your own name, but make sure YOUR name is first and bold**
 * Like this: 
 * **Chenrui Shu (crshu)**
-* Yea-Ree Chang (cyearee)
+* Shi Lu (lushi)
 
 
 ## Questions & code instructions

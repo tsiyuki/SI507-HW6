@@ -60,10 +60,7 @@ Below are a bunch of questions and indications of things to do. For each indicat
 * Like this: 
 * **Chenrui Shu (crshu)**
 * Yea-Ree Chang (cyearee)
-* Ruchi Ookalkar (ruchido)
-* Innocent Obi (innoobi)
-* Zhen Wang (alejwang)
-* etc.
+
 
 ## Questions & code instructions
 
@@ -87,23 +84,37 @@ JavaScript runs with HTML and CSS in most cases. To run the JavaScript code, fir
 
 * **What functions in JavaScript seem to be similar in function to the `print` function in Python? (There are two.) Why might you use one and not the other? Explain briefly.**
 
-In JavaScript, `alert` and `console.log` are sililar in function to the `print` function in Python. I might use `console.log`, because this function would not jump out in front of the web page as `alert` function did. We could check the console to see the results and would not influence the users' experiences.
+In JavaScript, `alert` and `console.log` are sililar in function to the `print` function in Python. I might use `console.log`, because this function would not jump out in front of the web page as `alert` function does. We could check the console to see the results and would not influence the users' experiences.
 
 * **What code would have to comment out to get rid of the pop-up box when you load the page? (Related to the last question.) Do that in the code file, and then, add code so that a text box will appear that contains the current date and time! *HINT:* Look through the rest of the code first...**
 
 * **How can you put your own name at the top where it currently says "A name"? Explain very briefly how to do so, and replace `A name` in the web page with your own name.**
 
+Change the value for the variable from `document.querySelector('h1').innerHTML = "A name"` to `document.querySelector('h1').innerHTML = "Chenrui Shu"`
+
 * **What does the word `document` represent in this code? Explain briefly.**
+
+The word `document` represents the whole HTML document object.
 
 * **What is happening in line 12 ( 
 		`document.querySelector('#items').innerHTML = document.getElementsByTagName('li').length`
 )? Explain, briefly (<= 2 sentences).**
 
+The right hand side caculates the number of `<li>` tag used in the HTML document, and the left hand side shows this number in the element with `id = "items"` in the HTML document.
+
 * **What color would the background of this page be <u>if there were no JavaScript in this page</u>?**
+
+The color for the background would be white if there were no JavaScript in this page.
 
 * **Why are there a couple of gray boxes on the screen with a different colored border? How could you edit this code to make them a different color? Explain briefly. Then edit the code to make those boxes some shade of blue, of your choosing.**
 
+Because the background color is set to be #b3b3b3 by using `background-color: #b3b3b3` and the border color is set to be #FFFFFF by using `border: 3px solid #FFFFFF`, so their color are designed seperately and diffferently.
+
+Change the value after `background-color:` in the code could change the color of the background and also change the value after `border:` in the code could change the color of the broder.
+
 * **Edit the code so that, if you highlight `McGill University` and copy it, you see the text `O Canada` near the bottom of the page. Briefly explain why you made the edits that you did -- how did you know/figure out what to do?**
+
+This function is similar to the `Go blue` function already did for `University of Michigan`. We could add a `copyfunction2` which selects the `<div>` element with `id = cheer` to add the text `O Canada` every time when the `McGill University` is highlighted and coped. Meanwhile, we added a `oncopy="copyFunction2()"` attribute to the `<li>` tag of `McGill University`.
 
 * **In the original code, when you click the button that says `Wow`, you see a text box! Wow. Explain briefly in your own words why the following code causes that to happen:**
 
@@ -118,7 +129,7 @@ function handleClick(){
 <button onclick=handleClick() id="wow-button">Wow</button>
 ```
 
-
+Every time we click the Wow botton, the function `handleClick` would be called. In the `handleClick` function, the `alert` function is further called and therefore a text box says `hello` would pop up.
 
 * **Knowing what you learned from the previous question, add code/markup to the `jsPracticeLab.html` file *so that* there is a button with the text `Spring Equinox 2019` on it somewhere on the page, and when that button is clicked, a text box containing the text `March 20, 2019` appears. (There's no function -- that I am aware of -- to automatically get this info, you've got to type it yourself.)**
 
@@ -130,11 +141,30 @@ function handleClick(){
 
 * **When you enter input that isn't valid, you see an error that is red. Why is the error in red? Why is the response for valid inputs blue?**
 
+Because the color is set in the `<style>` tage. We see that in the code, the error is set to be red and the good input is set to be blue.
+
+```
+<style type="text/css">
+    .error{
+        color: red;
+    }
+    .good {
+        color: blue;
+    }
+</style>
+```
+
 * **What is this line `var regex = /^[a-zA-Z]+$/;` helping with? And if you googled something to figure that out, what did you google, and what, briefly, did you learn? (If you didn't need to google, you can leave that out, but explain briefly what that line is helping the program do, anyway.)**
+
+This line helps to check if the input is one word. I googled `regular expression` and I learnt that the regular expression is a sequence of charaters and could help to define a search pattern.
 
 * **What's different about the syntax of conditional statements in JavaScript, compared to Python?**
 
+In JavaScript, the condition is stated inside parenthesis and the blocks of code after `if` or `else` condition to be executed are inside curly brackets. However, for conditional statements in Python, no parenthesis nor curly brackets is used, a colon is used after `if` or `else` condtion instead.
+
 * **What do you think the `10000` refers to in the code `.fadeOut(10000)`?**
+
+The `1000` refers to the time for the text to fade out.
 
 * **What do you think is going on with the following code at the beginning of the program? Note that the most important thing to do for answering this question is to be thoughtful and clear, not to be absolutely correct:**
 
@@ -143,6 +173,7 @@ $(document).ready(function(){
     $("form").submit(function(event){
 ```
 
+The first line is executed when the HTML document is succefully loaded and the second line is executed then the form on the HTML document is submited.
 
 * **Add some code to the `jquerylib_submit_example.html` file so that, if the input is valid and is specifically the text `hello`, rather than the visible output being `Nice!` in blue, the visible output should be `Hello to you too!`, also in blue, just like `Nice!` is.**
 	* *HINT:* You'll have to make some changes to the conditional statement, and possibly look up some JavaScript conditional syntax. You'll also need to look carefully at what generates visible output right now.

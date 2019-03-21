@@ -58,7 +58,7 @@ Below are a bunch of questions and indications of things to do. For each indicat
 ### Names of people you have worked with on this assignment
 * List everyone's names and uniqnames who have worked on this assignment with you, **including your own name, but make sure YOUR name is first and bold**
 * Like this: 
-* **Jackie Cohen (jczetta)**
+* **Chenrui Shu (crshu)**
 * Yea-Ree Chang (cyearee)
 * Ruchi Ookalkar (ruchido)
 * Innocent Obi (innoobi)
@@ -79,9 +79,15 @@ Some JavaScript code
 
 * **What does a code comment look like in JavaScript? What character/s do you have to put before a comment?**
 
+Double forward slash " // " is used to put before a comment.
+
 * **Explain what needs to happen to get a JavaScript program to "run", given the JavaScript you've seen in this assignment.**
 
+JavaScript runs with HTML and CSS in most cases. To run the JavaScript code, first we need to put the code in the < script > tag. Then we could open the html file in a browser to run the program.
+
 * **What functions in JavaScript seem to be similar in function to the `print` function in Python? (There are two.) Why might you use one and not the other? Explain briefly.**
+
+In JavaScript, `alert` and `console.log` are sililar in function to the `print` function in Python. I might use `console.log`, because this function would not jump out in front of the web page as `alert` function did. We could check the console to see the results and would not influence the users' experiences.
 
 * **What code would have to comment out to get rid of the pop-up box when you load the page? (Related to the last question.) Do that in the code file, and then, add code so that a text box will appear that contains the current date and time! *HINT:* Look through the rest of the code first...**
 

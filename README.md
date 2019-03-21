@@ -88,6 +88,17 @@ In JavaScript, `alert` and `console.log` are sililar in function to the `print` 
 
 * **What code would have to comment out to get rid of the pop-up box when you load the page? (Related to the last question.) Do that in the code file, and then, add code so that a text box will appear that contains the current date and time! *HINT:* Look through the rest of the code first...**
 
+The code below should be comment out to get rid of the pop-up box when we load the page.
+
+```
+alert("hello");
+```
+
+Then the code below is added so that a text box will appear that contains the current date and time.
+
+```
+alert(new Date());
+```
 * **How can you put your own name at the top where it currently says "A name"? Explain very briefly how to do so, and replace `A name` in the web page with your own name.**
 
 Change the value for the variable from `document.querySelector('h1').innerHTML = "A name"` to `document.querySelector('h1').innerHTML = "Chenrui Shu"`
@@ -133,7 +144,7 @@ Every time we click the Wow botton, the function `handleClick` would be called. 
 
 * **Knowing what you learned from the previous question, add code/markup to the `jsPracticeLab.html` file *so that* there is a button with the text `Spring Equinox 2019` on it somewhere on the page, and when that button is clicked, a text box containing the text `March 20, 2019` appears. (There's no function -- that I am aware of -- to automatically get this info, you've got to type it yourself.)**
 
-
+Please check the `jsPracticeLab.html` for the added code.
 
 ### The next few questions address the `jquerylib_submit_example.html` file.
 
@@ -177,3 +188,8 @@ The first line is executed when the HTML document is succefully loaded and the s
 
 * **Add some code to the `jquerylib_submit_example.html` file so that, if the input is valid and is specifically the text `hello`, rather than the visible output being `Nice!` in blue, the visible output should be `Hello to you too!`, also in blue, just like `Nice!` is.**
 	* *HINT:* You'll have to make some changes to the conditional statement, and possibly look up some JavaScript conditional syntax. You'll also need to look carefully at what generates visible output right now.
+
+Please check the `jquerylib_submit_example.html` for the added code.
+
+
+
